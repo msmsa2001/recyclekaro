@@ -817,10 +817,7 @@ section,
     scroll-margin-top: 66px;
   }
   .about .content {
-    position: static !important;
-}
-header .btn-getstarted{
-  display: none;
+    position: static;
 }
 } 
 
