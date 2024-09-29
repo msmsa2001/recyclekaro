@@ -3285,7 +3285,7 @@ button:active {
   gap: 20px;
 } */
 @media screen and (max-width: 768px) {
-  .portfolio{
-    display: none;
+  .port-img{
+    width: 300px !important;
   }
 }

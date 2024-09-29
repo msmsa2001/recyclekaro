@@ -3278,14 +3278,9 @@ button:active {
   align-self: start;
 }
 
-/* 
+
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-} */
-@media screen and (max-width: 768px) {
-  .portfolio{
-    display: none;
-  }
+  grid-template-columns: 1rem 1rem 1rem 1rem;
+  gap: 20px; /* Controls the space between items */
 }
