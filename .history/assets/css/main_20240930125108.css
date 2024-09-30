@@ -12,36 +12,33 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Raleway", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Raleway",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root {
-  --background-color: #ffffff;
+:root { 
+  --background-color: #ffffff; 
   --default-color: #555555;
   /* --heading-color: #1e4356;  */
-  --heading-color: #5BA47B;
+  --heading-color:#5BA47B;
   /* --accent-color: #68a4c4;  */
-  --accent-color: #A2CE44;
-  --surface-color: #ffffff;
+  --accent-color:#A2CE44;
+  --surface-color: #ffffff; 
   --contrast-color: #ffffff;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;
+  --nav-color: #ffffff; 
   /* --nav-hover-color: #68a4c4;  */
-  --nav-hover-colo: #A2CE44;
-  --nav-mobile-background-color: #ffffff;
-  /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff;
-  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #555555;
-  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-hover-colo:#A2CE44;
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #555555; /* Used for navigation links of the dropdown items in the navigation menu. */
   /* --nav-dropdown-hover-color: #68a4c4;  */
-  --nav-dropdown-hover-color: #A2CE44;
+  --nav-dropdown-hover-color:#A2CE44;
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -53,11 +50,11 @@
 
 .dark-background {
   /* --background-color: #1e4356; */
-  --background-color: #5BA47B;
+  --background-color:#5BA47B;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   /* --surface-color: #284e62; */
-  --surface-colo: #5BA47B;
+  --surface-colo:#5BA47B;
   --contrast-color: #ffffff;
 }
 
@@ -244,9 +241,7 @@ h6 {
 .header .logo {
   line-height: 1;
 }
-
-.header .logo img,
-.footer-about .logo img {
+.header .logo img , .footer-about .logo img{
   max-height: 70px;
   margin-right: 8px;
 }
@@ -262,9 +257,8 @@ h6 {
 ------------------------------*/
 .scrolled .header {
   /* --background-color: #1e4356; */
-  --background-color: #5BA47B;
+  --background-color:#5BA47B;
 }
-
 header .btn-getstarted,
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
@@ -290,7 +284,6 @@ header .btn-getstarted,
   .navmenu {
     padding: 0;
   }
-
   .header .btn-getstarted {
     order: 2;
     margin: 0 15px 0 0;
@@ -822,15 +815,13 @@ section,
   .section {
     scroll-margin-top: 66px;
   }
-
   .about .content {
     position: static !important;
-  }
-
-  header .btn-getstarted {
-    display: none;
-  }
 }
+header .btn-getstarted{
+  display: none;
+}
+} 
 
 /*--------------------------------------------------------------
 # Global Section Titles
@@ -1193,7 +1184,6 @@ section,
 .featured-services .service-item.item-red:hover .icon i {
   color: var(--contrast-color);
 }
-
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1217,7 +1207,7 @@ section,
   text-align: center;
   border-radius: 8px;
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
-  /* height: 230px; */
+  height: 140px;
 }
 
 .services .details .icon {
@@ -1269,19 +1259,15 @@ section,
 .services .service-item:hover .img img {
   transform: scale(1.2);
 }
-
-@media (max-width: 555px) {
-  .services .details {
+@media (max-width: 640px){
+  .services .details{
     height: 200px;
-    padding: 17px 21px !important;
-  }
-
+  padding: 60px 40px; }
   .services .details h4 {
     font-size: 19px;
     font-weight: 600;
   }
 }
-
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1314,8 +1300,8 @@ section,
 
 .about .content {
   position: sticky;
-  top: 100px;
-  align-self: start;
+  top: 100px; 
+  align-self: start; 
 }
 
 
@@ -1400,7 +1386,6 @@ section,
     margin-top: 0;
   }
 }
-
 /*--------------------------------------------------------------
 # video Section
 --------------------------------------------------------------*/
@@ -1514,7 +1499,6 @@ section,
     font-size: 13px;
   }
 }
-
 /*--------------------------------------------------------------
 # about-features Section
 --------------------------------------------------------------*/
@@ -1835,7 +1819,6 @@ section,
   opacity: 1;
   bottom: 20px;
 }
-
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
@@ -2287,7 +2270,7 @@ section,
   justify-content: center;
   /* width: 36px; */
   padding: 1.4rem 1.6rem;
-  border-radius: 10px;
+ border-radius: 10px;
   transition: 0.3s;
 }
 
@@ -2339,12 +2322,10 @@ section,
 .team .team-member:hover .social {
   opacity: 1;
 }
-
-.member-img img {
+.member-img img{
   width: 30rem;
   height: 15rem;
 }
-
 /*--------------------------------------------------------------
 # Faq Section
 --------------------------------------------------------------*/
@@ -2444,7 +2425,6 @@ section,
   transform: rotate(90deg);
   color: var(--accent-color);
 }
-
 /*--------------------------------------------------------------
 # about-Services Section
 --------------------------------------------------------------*/
@@ -3002,7 +2982,6 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
-
 /*--------------------------------------------------------------
 # about-Features Section
 --------------------------------------------------------------*/
@@ -3034,7 +3013,6 @@ section,
   background: var(--accent-color);
   color: var(--contrast-color);
 }
-
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -3241,8 +3219,8 @@ section,
 /* Centering the button container */
 .button-container {
   display: flex;
-  justify-content: center;
-  padding-top: 0.5em;
+  justify-content: center; 
+  padding-top:0.5em ;
 
 }
 
@@ -3268,9 +3246,11 @@ button {
   top: 0;
   border-radius: 0.6em;
   margin-top: -0.25em;
-  background-image: linear-gradient(rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  );
 }
 
 .label {
@@ -3299,13 +3279,10 @@ button:hover .transition {
 button:active {
   transform: scale(0.97);
 }
-
 .service-details .services-list {
-  position: -webkit-sticky;
-  /* For Safari */
+  position: -webkit-sticky; /* For Safari */
   position: sticky;
-  top: 20px;
-  /* Adjust as needed */
+  top: 20px; /* Adjust as needed */
   align-self: start;
 }
 
@@ -3316,7 +3293,7 @@ button:active {
   gap: 20px;
 } */
 @media screen and (max-width: 768px) {
-  .portfolio {
+  .portfolio{
     display: none;
   }
 }

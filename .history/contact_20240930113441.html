@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - Moderna Bootstrap Template</title>
+  <title>Contact - Moderna Bootstrap Template</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -38,7 +38,7 @@
   ======================================================== -->
 </head>
 
-<body class="about-page">
+<body class="contact-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -46,9 +46,9 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
+        <!-- <h1 class="sitename">Moderna</h1> -->
         <img src="assets/img/logos/Recykal_karo_logo_Balck_BG-removebg-preview.png" alt="" style="width: 180px;">
 
-        <!-- <h1 class="sitename">Moderna</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -90,193 +90,94 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container position-relative">
-        <h1>About</h1>
-        <p>Committed to transforming e-waste into sustainable solutions for a greener tomorrow</p>
+        <h1>Contact</h1>
+        <p>Contact us to address any concerns or inquiries regarding our services.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
+            <li class="current">Contact</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
-            <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a> -->
+          <div class="col-lg-6 ">
+            <div class="row gy-4">
+
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>D’Souza Complex, 90 Feet Road, Sakinaka, Mumbai-400072
+                  </p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+91 9082588673</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@recykalkaro.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
           </div>
-          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>GreenLife E-Waste is dedicated to turning electronic waste into eco-friendly solutions for a sustainable future</h3>
-            <p>
-              Welcome to GreenLife E-Waste, where we focus on sustainable electronic waste management. We are dedicated to transforming e-waste into eco-friendly solutions that benefit the environment and communities.or sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Transforming e-waste into valuable resources for a sustainable future.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Processing discarded devices responsibly for a cleaner environment.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Creating a circular economy for positive change through e-waste.</span></li>
-            </ul>
-            <p>
-              At GreenLife E-Waste, our mission is to lead the charge in responsible e-waste recycling. We believe in the potential of every discarded device, striving to convert waste into valuable resources through innovative recycling practices.
-            </p>
-          </div>
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
-  <!-- Services Section -->
-  <section id="about-services" class="about-services section">
+      <div class="mt-5" data-aos="fade-up" data-aos-delay="200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.2793611142156!2d72.88540377395167!3d19.095396651365814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c87ac4d15cdb%3A0xe466462b259fdd62!2sDSOUZA%20NAGAR%20COMPLEX%20dosti%20regency!5e0!3m2!1sen!2sin!4v1727327275013!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div><!-- End Google Maps -->
 
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <!-- <span>Process</span> -->
-      <h2>Process</h2>
-      <p>Our E-Waste Recycling Process</p>
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-      <div class="row gy-4">
-
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-item  position-relative">
-            <div class="icon">
-              <!-- <i class="bi bi-activity"></i> -->
-               <i>01</i>
-            </div>
-           
-              <h3>Collection and Sorting</h3>
-           
-            <p>We gather e-waste from various sources and sort it into categories for safe handling.</p>
-          </div>
-        </div><!-- End Service Item -->
-
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-item position-relative">
-            <div class="icon">
-              <!-- <i class="bi bi-broadcast"></i> -->
-               <i>02</i>
-            </div>
-           
-              <h3>Dismantling</h3>
-            
-            <p>Electronic devices are taken apart to extract useful components and remove hazardous materials.</p>
-          </div>
-        </div><!-- End Service Item -->
-
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-item position-relative">
-            <div class="icon">
-              <!-- <i class="bi bi-easel"></i> -->
-               <i>03</i>
-            </div>
-          
-              <h3>Shredding and Granulation</h3>
-            
-            <p>Separated parts are shredded into smaller pieces to facilitate recycling.</p>
-          </div>
-        </div><!-- End Service Item -->
-
-        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="service-item position-relative">
-            <div class="icon">
-              <!-- <i class="bi bi-bounding-box-circles"></i> -->
-               <i>04</i>
-            </div>
-           
-              <h3>Refining and Recovery</h3>
-           
-            <p>Extracted materials are cleaned to recover valuable metals for reuse in new products.</p>
-            <!-- <a href="" class="stretched-link"></a> -->
-          </div>
-        </div><!-- End Service Item -->
-
-       
-
-      </div>
-
-    </div>
-
-  </section><!-- /Services Section -->
-   <!-- Features Section -->
-   <section id="about-features" class="about-features section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Features</h2>
-      <!-- <p>Our Advacedd Features<br></p> -->
-    </div><!-- End Section Title -->
-
-    <div class="container">
-
-      <div class="row gy-5">
-
-        <div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
-          <img src="assets/img/features.webp" class="img-fluid" alt="">
-        </div>
-
-        <div class="col-xl-6 d-flex">
-          <div class="row align-self-center gy-4">
-
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Eco-Friendly Processes</h3>
-              </div>
-            </div><!-- End Feature Item -->
-
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Comprehensive Collection</h3>
-              </div>
-            </div><!-- End Feature Item -->
-
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Certified Recycling</h3>
-              </div>
-            </div><!-- End Feature Item -->
-
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Data Security</h3>
-              </div>
-            </div><!-- End Feature Item -->
-
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Resource Recovery</h3>
-              </div>
-            </div><!-- End Feature Item -->
-
-            <div class="col-md-6" data-aos="fade-up" data-aos-delay="700">
-              <div class="feature-box d-flex align-items-center">
-                <i class="bi bi-check"></i>
-                <h3>Community Engagement</h3>
-              </div>
-            </div><!-- End Feature Item -->
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section><!-- /Features Section -->
-
-   
+    </section><!-- /Contact Section -->
 
   </main>
 
@@ -302,8 +203,8 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logos/Recykal_karo_logo_Balck_BG-removebg-preview.png" alt="">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Moderna</span>
           </a>
           <div class="footer-contact pt-3">
             <p>D’Souza Complex, 90 Feet Road, 
@@ -355,11 +256,12 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://pyzon.in/" target="_blank">Pyzon Pvt. Ltd.</a>
+        Designed by <a href="https://pyzon.in/">Pyzon Pvt. Ltd.</a>
       </div>
     </div>
 
   </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
